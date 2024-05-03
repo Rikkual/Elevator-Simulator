@@ -1,0 +1,25 @@
+# ninja log v5
+31	2824	7364065094491590	CMakeFiles/Elevator.dir/config.cpp.obj	36c39e86d3a709e1
+18	2912	7364065095365119	CMakeFiles/Elevator.dir/main.cpp.obj	e3be1bad898a1c11
+0	172	7364170536710620	build.ninja	5c7d91aa79f666a3
+77	3090	7364065097126211	CMakeFiles/Elevator.dir/Logger.cpp.obj	95663a75743e3bcf
+2013	2130	7347331656892272	Elevator.exe	22960d5ee9459334
+3	3273	7364065098965103	CMakeFiles/Elevator.dir/Elevator.cpp.obj	a6c49b32d9e40c50
+4303	4640	7364065112594119	bin/Elevator.exe	e31178a2009c5111
+46	4303	7364065109282463	CMakeFiles/Elevator.dir/TerminalControl.cpp.obj	cabae21eb0465c6d
+2	1961	7349499443098317	CMakeFiles/test.dir/test.cpp.obj	27c72add9488e7f6
+1962	2066	7349499444115600	test.exe	10dc10e03cf14e70
+92	3066	7364065096910045	CMakeFiles/Elevator.dir/Printer.cpp.obj	17d15c01df715f8
+125	3425	7364065100486358	CMakeFiles/Elevator.dir/SolveElevator.cpp.obj	3e72afb9768cc6d4
+61	2837	7364065094611836	CMakeFiles/Elevator.dir/AdvElevator.cpp.obj	d334b5447d226ac
+108	2989	7364065096145915	CMakeFiles/Elevator.dir/SolveAdvelevator.cpp.obj	ad98c4e50afecd02
+31	3242	7364170691208951	CMakeFiles/Elevator.dir/AdvElevator.cpp.obj	42bc518f4bd27101
+3	3286	7364170691665445	CMakeFiles/Elevator.dir/main.cpp.obj	28ea287164445fff
+112	3344	7364170692248463	CMakeFiles/Elevator.dir/SolveAdvelevator.cpp.obj	ddf6f8092106990c
+78	3353	7364170692342225	CMakeFiles/Elevator.dir/config.cpp.obj	5c55fbf8326794de
+95	3534	7364170694147780	CMakeFiles/Elevator.dir/Printer.cpp.obj	56de41005ad88360
+18	3567	7364170694487041	CMakeFiles/Elevator.dir/Logger.cpp.obj	ec09cc89e7c4216b
+45	3851	7364170697313697	CMakeFiles/Elevator.dir/Elevator.cpp.obj	4cdf48a2c08284aa
+128	3994	7364170698742972	CMakeFiles/Elevator.dir/SolveElevator.cpp.obj	79db38312d8742ee
+62	4902	7364170707849286	CMakeFiles/Elevator.dir/TerminalControl.cpp.obj	7ca8003a579b3817
+4902	5238	7364170711163610	bin/Elevator.exe	e31178a2009c5111
