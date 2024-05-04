@@ -1,4 +1,0 @@
-F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/cmake-build-debug/CMakeFiles/Elevator.dir
-F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/cmake-build-debug/CMakeFiles/test.dir
-F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/cmake-build-debug/CMakeFiles/edit_cache.dir
-F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
