@@ -5,4 +5,4 @@
 #include "AdvElevator.h"
 
 
-AdvElevator::AdvElevator(int _floor): Elevator(_floor) { }
+AdvElevator::AdvElevator(int _floor): Elevator(_floor) {}

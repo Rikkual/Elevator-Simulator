@@ -3,9 +3,9 @@
 //
 
 #include <bits/stdc++.h>
-#include "Elevator.h"
-#include "AdvElevator.h"
-#include "Logger.h"
+#include "Elevator/Elevator.h"
+#include "Elevator/AdvElevator.h"
+#include "Logger/Logger.h"
 #include "TerminalControl.h"
 
 #include "config.h"
@@ -25,7 +25,6 @@ void solveAdvElevator(Logger &logger, Printer &printer);
 
 signed main() {
     setUTF8();
-
     Logger logger;
     Printer printer;
 
@@ -37,7 +36,6 @@ signed main() {
     Printer::clearAbout();
 
     choseMode(logger, printer);
-    // Printer::printFloorBase(elevator.getCurrentFloor());
     // showCursor(); enableEcho();
 
     // SolveElevator::solve(elevator, logger, printer);
@@ -46,18 +44,22 @@ signed main() {
 }
 
 std::vector<string> options = {
-        "电梯上行",
-        "电梯下行",
-        "打开日志",
-        "退出程序"
+        "单人电梯",
+        "多人电梯",
+        "退出程序",
 };
 
 void choseMode(Logger &logger, Printer &printer) {
     int x = INTERACT_X, y = INTERACT_Y;
+    printer.setMessage("本电梯支持两种运行模式");
     printer.printOptions(x, y, options);
     showCursor(); enableEcho();
     int mode; cin >> mode;
     hideCursor(); disableEcho();
+
+    getCursorPos(x, y);
+    Printer::clearAbout(y);
+
     switch(mode) {
         case 1:
             Printer::clearAbout(y);
@@ -78,9 +80,14 @@ void solveElevator(Logger &logger, Printer &printer) {
     Elevator elevator(FLOOR);
     elevator.setLogger(&logger);
     elevator.setPrinter(&printer);
+    Printer::printFloorBase(elevator.getCurrentFloor());
     SolveElevator::solve(elevator, logger, printer);
 }
 
 void solveAdvElevator(Logger &logger, Printer &printer) {
-
+    AdvElevator elevator(FLOOR);
+    elevator.setLogger(&logger);
+    elevator.setPrinter(&printer);
+    Printer::printFloorBase(elevator.getCurrentFloor());
+    SolveAdvElevator::solve(elevator, logger, printer);
 }

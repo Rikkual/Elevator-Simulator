@@ -42,7 +42,7 @@ extern const bool CLEAR_LOG_FILE;       // 是否在启动前清空log文件
 extern const bool LOG_TIME;             // 是否在log文件中记录时间
 
 #define NAMESPACE_SOLVE_ELEVAOTR namespace SolveElevator {
-#define NAMESPACE_SOLVE_ADVELEVAOTR namespace SolveAdvelevator {
+#define NAMESPACE_SOLVE_ADVELEVAOTR namespace SolveAdvElevator {
 #define NAMESPACE_END }
 
 #endif // CONFIG_FILE

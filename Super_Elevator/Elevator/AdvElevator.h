@@ -14,7 +14,7 @@ class AdvElevator : public Elevator {
 protected:
     std::vector<Person> people;
 public:
-    AdvElevator(int _floor);
+    explicit AdvElevator(int _floor);
 };
 
 

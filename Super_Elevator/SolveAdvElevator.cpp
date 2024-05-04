@@ -3,14 +3,14 @@
 //
 
 #include <bits/stdc++.h>
-#include "Elevator/Elevator.h"
+#include "Elevator/AdvElevator.h"
 #include "Logger/Logger.h"
 #include "Printer/Printer.h"
 #include "TerminalControl.h"
 
 #include "config.h"
 
-NAMESPACE_SOLVE_ELEVAOTR
+NAMESPACE_SOLVE_ADVELEVAOTR
 
 std::vector<string> options = {
         "电梯上行",
@@ -19,12 +19,12 @@ std::vector<string> options = {
         "退出程序"
 };
 
-bool executeOption(Elevator &elevator, Logger &logger, Printer &printer, int choice);
-void elevatorUp(Elevator &elevator, Logger &logger, Printer &printer);
-void elevatorDown(Elevator &elevator, Logger &logger, Printer &printer);
-void elevatorUpDown(Elevator &elevator, Logger &logger, Printer &printer, bool up);
+bool executeOption(AdvElevator &elevator, Logger &logger, Printer &printer, int choice);
+void elevatorUp(AdvElevator &elevator, Logger &logger, Printer &printer);
+void elevatorDown(AdvElevator &elevator, Logger &logger, Printer &printer);
+void elevatorUpDown(AdvElevator &elevator, Logger &logger, Printer &printer, bool up);
 
-void solve(Elevator &elevator, Logger &logger, Printer &printer) {
+void solve(AdvElevator &elevator, Logger &logger, Printer &printer) {
     int stx = INTERACT_X, sty = INTERACT_Y;
     printer.setMessage(std::format("Ciallo, 本电梯最高服务至{}层。", FLOOR));
     while(true) {
@@ -41,7 +41,7 @@ void solve(Elevator &elevator, Logger &logger, Printer &printer) {
     }
 }
 
-bool executeOption(Elevator &elevator, Logger &logger, Printer &printer, int choice) {
+bool executeOption(AdvElevator &elevator, Logger &logger, Printer &printer, int choice) {
     hideCursor(); disableEcho();
     switch(choice) {
         case 1: // 上行
@@ -70,15 +70,15 @@ bool executeOption(Elevator &elevator, Logger &logger, Printer &printer, int cho
     return true;
 }
 
-void elevatorUp(Elevator &elevator, Logger &logger, Printer &printer) {
+void elevatorUp(AdvElevator &elevator, Logger &logger, Printer &printer) {
     elevatorUpDown(elevator, logger, printer, true);
 }
 
-void elevatorDown(Elevator &elevator, Logger &logger, Printer &printer) {
+void elevatorDown(AdvElevator &elevator, Logger &logger, Printer &printer) {
     elevatorUpDown(elevator, logger, printer, false);
 }
 
-void elevatorUpDown(Elevator &elevator, Logger &logger, Printer &printer, bool up) {
+void elevatorUpDown(AdvElevator &elevator, Logger &logger, Printer &printer, bool up) {
     bool down = !up;
     if(up && elevator.getCurrentFloor() == FLOOR) {
         logger.error("用户在顶层尝试上行！");

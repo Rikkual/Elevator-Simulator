@@ -7,21 +7,21 @@ include_directories(.)
 
 add_executable(Elevator
         main.cpp
-        Elevator.cpp
-        AdvElevator.cpp
-        Logger.cpp
+        Elevator/Elevator.cpp
+        Elevator/AdvElevator.cpp
+        Logger/Logger.cpp
         TerminalControl.cpp
         config.cpp
-        Printer.cpp
+        Printer/Printer.cpp
         SolveElevator.cpp
-        SolveAdvelevator.cpp
+        SolveAdvElevator.cpp
 )
 
 set_target_properties(Elevator PROPERTIES
         RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
 )
 
-configure_file(About.txt ${CMAKE_BINARY_DIR}/bin/About.txt COPYONLY)
-configure_file(CloseDoor.txt ${CMAKE_BINARY_DIR}/bin/CloseDoor.txt COPYONLY)
+configure_file(Printer/About.txt ${CMAKE_BINARY_DIR}/bin/About.txt COPYONLY)
+configure_file(Printer/CloseDoor.txt ${CMAKE_BINARY_DIR}/bin/CloseDoor.txt COPYONLY)
 
 add_executable(test test.cpp)
