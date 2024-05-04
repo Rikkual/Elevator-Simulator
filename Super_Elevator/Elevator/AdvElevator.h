@@ -10,11 +10,13 @@
 #include "Elevator.h"
 #include "Person.hpp"
 
-class AdvElevator : public Elevator {
+class AdvElevator: public Elevator {
 protected:
     std::vector<Person> people;
 public:
     explicit AdvElevator(int _floor);
+    void addPerson(Person p);
+    void addPerson(int id, int target);
 };
 
 

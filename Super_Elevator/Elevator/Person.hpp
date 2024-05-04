@@ -8,13 +8,14 @@
 
 class Person {
 private:
+    int id;
     int target;
     friend bool operator<(const Person& p1, const Person& p2) {
-        return p1.target < p2.target;
+        return p1.target < p2.target || (p1.target == p2.target && p1.id < p2.id);
     }
 public:
-    Person() {};
-    Person(int _target): target(_target) {};
+    Person() = default;
+    Person(int _id, int _target): id(_id), target(_target) {};
 };
 
 
