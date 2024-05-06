@@ -9,13 +9,19 @@
 class Person {
 private:
     int id;
-    int target;
+    int targetFloor;
     friend bool operator<(const Person& p1, const Person& p2) {
-        return p1.target < p2.target || (p1.target == p2.target && p1.id < p2.id);
+        return p1.targetFloor < p2.targetFloor || (p1.targetFloor == p2.targetFloor && p1.id < p2.id);
     }
 public:
     Person() = default;
-    Person(int _id, int _target): id(_id), target(_target) {};
+    Person(int _id, int _targetFloor): id(_id), targetFloor(_targetFloor) {};
+    [[nodiscard]] int getId() const {
+        return id;
+    }
+    [[nodiscard]] int getTargetFloor() const {
+        return targetFloor;
+    }
 };
 
 
