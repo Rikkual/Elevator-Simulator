@@ -9,9 +9,9 @@
 
 // 调试开关
 #define DEBUG_MODE
-// #define DEBUG_ABOUT_JUMP
+#define DEBUG_ABOUT_JUMP
 // #define DEBUG_ELEVATOR
-// #define DEBUG_ADVELEVATOR
+#define DEBUG_ADVELEVATOR
 
 #include <bits/stdc++.h>
 

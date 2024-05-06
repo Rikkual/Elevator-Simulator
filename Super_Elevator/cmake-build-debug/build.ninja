@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Elevator-Simulator/Super_Elevator/cmake-build-debug/
+cmake_ninja_workdir = F$:/Class-Program/C++/Entertainment/Experiment$ 2/Elevator-Simulator/Super_Elevator/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target Elevator
 
@@ -49,66 +49,66 @@ cmake_ninja_workdir = F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Eleva
 
 build cmake_object_order_depends_target_Elevator: phony || CMakeFiles/Elevator.dir
 
-build CMakeFiles/Elevator.dir/main.cpp.obj: CXX_COMPILER__Elevator_unscanned_Debug F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Elevator-Simulator/Super_Elevator/main.cpp || cmake_object_order_depends_target_Elevator
+build CMakeFiles/Elevator.dir/main.cpp.obj: CXX_COMPILER__Elevator_unscanned_Debug F$:/Class-Program/C++/Entertainment/Experiment$ 2/Elevator-Simulator/Super_Elevator/main.cpp || cmake_object_order_depends_target_Elevator
   DEP_FILE = CMakeFiles\Elevator.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Printer"
+  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Printer"
   OBJECT_DIR = CMakeFiles\Elevator.dir
   OBJECT_FILE_DIR = CMakeFiles\Elevator.dir
 
-build CMakeFiles/Elevator.dir/Elevator/Elevator.cpp.obj: CXX_COMPILER__Elevator_unscanned_Debug F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Elevator-Simulator/Super_Elevator/Elevator/Elevator.cpp || cmake_object_order_depends_target_Elevator
+build CMakeFiles/Elevator.dir/config.cpp.obj: CXX_COMPILER__Elevator_unscanned_Debug F$:/Class-Program/C++/Entertainment/Experiment$ 2/Elevator-Simulator/Super_Elevator/config.cpp || cmake_object_order_depends_target_Elevator
+  DEP_FILE = CMakeFiles\Elevator.dir\config.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Printer"
+  OBJECT_DIR = CMakeFiles\Elevator.dir
+  OBJECT_FILE_DIR = CMakeFiles\Elevator.dir
+
+build CMakeFiles/Elevator.dir/Elevator/Elevator.cpp.obj: CXX_COMPILER__Elevator_unscanned_Debug F$:/Class-Program/C++/Entertainment/Experiment$ 2/Elevator-Simulator/Super_Elevator/Elevator/Elevator.cpp || cmake_object_order_depends_target_Elevator
   DEP_FILE = CMakeFiles\Elevator.dir\Elevator\Elevator.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Printer"
+  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Printer"
   OBJECT_DIR = CMakeFiles\Elevator.dir
   OBJECT_FILE_DIR = CMakeFiles\Elevator.dir\Elevator
 
-build CMakeFiles/Elevator.dir/Elevator/AdvElevator.cpp.obj: CXX_COMPILER__Elevator_unscanned_Debug F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Elevator-Simulator/Super_Elevator/Elevator/AdvElevator.cpp || cmake_object_order_depends_target_Elevator
+build CMakeFiles/Elevator.dir/Elevator/AdvElevator.cpp.obj: CXX_COMPILER__Elevator_unscanned_Debug F$:/Class-Program/C++/Entertainment/Experiment$ 2/Elevator-Simulator/Super_Elevator/Elevator/AdvElevator.cpp || cmake_object_order_depends_target_Elevator
   DEP_FILE = CMakeFiles\Elevator.dir\Elevator\AdvElevator.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Printer"
+  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Printer"
   OBJECT_DIR = CMakeFiles\Elevator.dir
   OBJECT_FILE_DIR = CMakeFiles\Elevator.dir\Elevator
 
-build CMakeFiles/Elevator.dir/Logger/Logger.cpp.obj: CXX_COMPILER__Elevator_unscanned_Debug F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Elevator-Simulator/Super_Elevator/Logger/Logger.cpp || cmake_object_order_depends_target_Elevator
+build CMakeFiles/Elevator.dir/Logger/Logger.cpp.obj: CXX_COMPILER__Elevator_unscanned_Debug F$:/Class-Program/C++/Entertainment/Experiment$ 2/Elevator-Simulator/Super_Elevator/Logger/Logger.cpp || cmake_object_order_depends_target_Elevator
   DEP_FILE = CMakeFiles\Elevator.dir\Logger\Logger.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Printer"
+  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Printer"
   OBJECT_DIR = CMakeFiles\Elevator.dir
   OBJECT_FILE_DIR = CMakeFiles\Elevator.dir\Logger
 
-build CMakeFiles/Elevator.dir/TerminalControl.cpp.obj: CXX_COMPILER__Elevator_unscanned_Debug F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Elevator-Simulator/Super_Elevator/TerminalControl.cpp || cmake_object_order_depends_target_Elevator
-  DEP_FILE = CMakeFiles\Elevator.dir\TerminalControl.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Printer"
-  OBJECT_DIR = CMakeFiles\Elevator.dir
-  OBJECT_FILE_DIR = CMakeFiles\Elevator.dir
-
-build CMakeFiles/Elevator.dir/config.cpp.obj: CXX_COMPILER__Elevator_unscanned_Debug F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Elevator-Simulator/Super_Elevator/config.cpp || cmake_object_order_depends_target_Elevator
-  DEP_FILE = CMakeFiles\Elevator.dir\config.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Printer"
-  OBJECT_DIR = CMakeFiles\Elevator.dir
-  OBJECT_FILE_DIR = CMakeFiles\Elevator.dir
-
-build CMakeFiles/Elevator.dir/Printer/Printer.cpp.obj: CXX_COMPILER__Elevator_unscanned_Debug F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Elevator-Simulator/Super_Elevator/Printer/Printer.cpp || cmake_object_order_depends_target_Elevator
+build CMakeFiles/Elevator.dir/Printer/Printer.cpp.obj: CXX_COMPILER__Elevator_unscanned_Debug F$:/Class-Program/C++/Entertainment/Experiment$ 2/Elevator-Simulator/Super_Elevator/Printer/Printer.cpp || cmake_object_order_depends_target_Elevator
   DEP_FILE = CMakeFiles\Elevator.dir\Printer\Printer.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Printer"
+  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Printer"
   OBJECT_DIR = CMakeFiles\Elevator.dir
   OBJECT_FILE_DIR = CMakeFiles\Elevator.dir\Printer
 
-build CMakeFiles/Elevator.dir/SolveElevator.cpp.obj: CXX_COMPILER__Elevator_unscanned_Debug F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Elevator-Simulator/Super_Elevator/SolveElevator.cpp || cmake_object_order_depends_target_Elevator
-  DEP_FILE = CMakeFiles\Elevator.dir\SolveElevator.cpp.obj.d
+build CMakeFiles/Elevator.dir/TerminalControl.cpp.obj: CXX_COMPILER__Elevator_unscanned_Debug F$:/Class-Program/C++/Entertainment/Experiment$ 2/Elevator-Simulator/Super_Elevator/TerminalControl.cpp || cmake_object_order_depends_target_Elevator
+  DEP_FILE = CMakeFiles\Elevator.dir\TerminalControl.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Printer"
+  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Printer"
   OBJECT_DIR = CMakeFiles\Elevator.dir
   OBJECT_FILE_DIR = CMakeFiles\Elevator.dir
 
-build CMakeFiles/Elevator.dir/SolveAdvElevator.cpp.obj: CXX_COMPILER__Elevator_unscanned_Debug F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Elevator-Simulator/Super_Elevator/SolveAdvElevator.cpp || cmake_object_order_depends_target_Elevator
+build CMakeFiles/Elevator.dir/SolveElevator.cpp.obj: CXX_COMPILER__Elevator_unscanned_Debug F$:/Class-Program/C++/Entertainment/Experiment$ 2/Elevator-Simulator/Super_Elevator/SolveElevator.cpp || cmake_object_order_depends_target_Elevator
+  DEP_FILE = CMakeFiles\Elevator.dir\SolveElevator.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Printer"
+  OBJECT_DIR = CMakeFiles\Elevator.dir
+  OBJECT_FILE_DIR = CMakeFiles\Elevator.dir
+
+build CMakeFiles/Elevator.dir/SolveAdvElevator.cpp.obj: CXX_COMPILER__Elevator_unscanned_Debug F$:/Class-Program/C++/Entertainment/Experiment$ 2/Elevator-Simulator/Super_Elevator/SolveAdvElevator.cpp || cmake_object_order_depends_target_Elevator
   DEP_FILE = CMakeFiles\Elevator.dir\SolveAdvElevator.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Printer"
+  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Printer"
   OBJECT_DIR = CMakeFiles\Elevator.dir
   OBJECT_FILE_DIR = CMakeFiles\Elevator.dir
 
@@ -120,7 +120,7 @@ build CMakeFiles/Elevator.dir/SolveAdvElevator.cpp.obj: CXX_COMPILER__Elevator_u
 #############################################
 # Link the executable bin\Elevator.exe
 
-build bin/Elevator.exe: CXX_EXECUTABLE_LINKER__Elevator_Debug CMakeFiles/Elevator.dir/main.cpp.obj CMakeFiles/Elevator.dir/Elevator/Elevator.cpp.obj CMakeFiles/Elevator.dir/Elevator/AdvElevator.cpp.obj CMakeFiles/Elevator.dir/Logger/Logger.cpp.obj CMakeFiles/Elevator.dir/TerminalControl.cpp.obj CMakeFiles/Elevator.dir/config.cpp.obj CMakeFiles/Elevator.dir/Printer/Printer.cpp.obj CMakeFiles/Elevator.dir/SolveElevator.cpp.obj CMakeFiles/Elevator.dir/SolveAdvElevator.cpp.obj
+build bin/Elevator.exe: CXX_EXECUTABLE_LINKER__Elevator_Debug CMakeFiles/Elevator.dir/main.cpp.obj CMakeFiles/Elevator.dir/config.cpp.obj CMakeFiles/Elevator.dir/Elevator/Elevator.cpp.obj CMakeFiles/Elevator.dir/Elevator/AdvElevator.cpp.obj CMakeFiles/Elevator.dir/Logger/Logger.cpp.obj CMakeFiles/Elevator.dir/Printer/Printer.cpp.obj CMakeFiles/Elevator.dir/TerminalControl.cpp.obj CMakeFiles/Elevator.dir/SolveElevator.cpp.obj CMakeFiles/Elevator.dir/SolveAdvElevator.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Elevator.dir
@@ -139,10 +139,10 @@ build bin/Elevator.exe: CXX_EXECUTABLE_LINKER__Elevator_Debug CMakeFiles/Elevato
 
 build cmake_object_order_depends_target_test: phony || CMakeFiles/test.dir
 
-build CMakeFiles/test.dir/test.cpp.obj: CXX_COMPILER__test_unscanned_Debug F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Elevator-Simulator/Super_Elevator/test.cpp || cmake_object_order_depends_target_test
+build CMakeFiles/test.dir/test.cpp.obj: CXX_COMPILER__test_unscanned_Debug F$:/Class-Program/C++/Entertainment/Experiment$ 2/Elevator-Simulator/Super_Elevator/test.cpp || cmake_object_order_depends_target_test
   DEP_FILE = CMakeFiles\test.dir\test.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/Printer"
+  INCLUDES = -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/." -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Elevator" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Logger" -I"F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/Printer"
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir
 
@@ -169,7 +169,7 @@ build test.exe: CXX_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/test.cpp.o
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "F:\Class-Program\C++\Entertainment\Entertainment 2\Elevator-Simulator\Super_Elevator\cmake-build-debug" && "D:\Program Files\JetBrains\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "F:\Class-Program\C++\Entertainment\Experiment 2\Elevator-Simulator\Super_Elevator\cmake-build-debug" && "D:\Program Files\JetBrains\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -180,7 +180,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "F:\Class-Program\C++\Entertainment\Entertainment 2\Elevator-Simulator\Super_Elevator\cmake-build-debug" && "D:\Program Files\JetBrains\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"F:\Class-Program\C++\Entertainment\Entertainment 2\Elevator-Simulator\Super_Elevator" -B"F:\Class-Program\C++\Entertainment\Entertainment 2\Elevator-Simulator\Super_Elevator\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "F:\Class-Program\C++\Entertainment\Experiment 2\Elevator-Simulator\Super_Elevator\cmake-build-debug" && "D:\Program Files\JetBrains\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"F:\Class-Program\C++\Entertainment\Experiment 2\Elevator-Simulator\Super_Elevator" -B"F:\Class-Program\C++\Entertainment\Experiment 2\Elevator-Simulator\Super_Elevator\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -202,7 +202,7 @@ build test: phony test.exe
 # =============================================================================
 
 #############################################
-# Folder: F:/Class-Program/C++/Entertainment/Entertainment 2/Elevator-Simulator/Super_Elevator/cmake-build-debug
+# Folder: F:/Class-Program/C++/Entertainment/Experiment 2/Elevator-Simulator/Super_Elevator/cmake-build-debug
 
 build all: phony bin/Elevator.exe test.exe
 
@@ -213,14 +213,14 @@ build all: phony bin/Elevator.exe test.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Elevator-Simulator/Super_Elevator/CMakeLists.txt F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Elevator-Simulator/Super_Elevator/Printer/About.txt F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Elevator-Simulator/Super_Elevator/Printer/CloseDoor.txt F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Elevator-Simulator/Super_Elevator/Printer/OpenDoor.txt
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake F$:/Class-Program/C++/Entertainment/Experiment$ 2/Elevator-Simulator/Super_Elevator/CMakeLists.txt F$:/Class-Program/C++/Entertainment/Experiment$ 2/Elevator-Simulator/Super_Elevator/Printer/About.txt F$:/Class-Program/C++/Entertainment/Experiment$ 2/Elevator-Simulator/Super_Elevator/Printer/CloseDoor.txt F$:/Class-Program/C++/Entertainment/Experiment$ 2/Elevator-Simulator/Super_Elevator/Printer/OpenDoor.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Elevator-Simulator/Super_Elevator/CMakeLists.txt F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Elevator-Simulator/Super_Elevator/Printer/About.txt F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Elevator-Simulator/Super_Elevator/Printer/CloseDoor.txt F$:/Class-Program/C++/Entertainment/Entertainment$ 2/Elevator-Simulator/Super_Elevator/Printer/OpenDoor.txt: phony
+build CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/Program$ Files/JetBrains/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake F$:/Class-Program/C++/Entertainment/Experiment$ 2/Elevator-Simulator/Super_Elevator/CMakeLists.txt F$:/Class-Program/C++/Entertainment/Experiment$ 2/Elevator-Simulator/Super_Elevator/Printer/About.txt F$:/Class-Program/C++/Entertainment/Experiment$ 2/Elevator-Simulator/Super_Elevator/Printer/CloseDoor.txt F$:/Class-Program/C++/Entertainment/Experiment$ 2/Elevator-Simulator/Super_Elevator/Printer/OpenDoor.txt: phony
 
 
 #############################################

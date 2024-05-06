@@ -6,8 +6,8 @@
 #define Elevator_H
 
 #include <bits/stdc++.h>
-#include "Logger/Logger.h"
-#include "Printer/Printer.h"
+#include "Logger.h"
+#include "Printer.h"
 
 #include "config.h"
 
