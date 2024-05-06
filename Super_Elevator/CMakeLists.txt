@@ -4,6 +4,9 @@ project(Elevator)
 set(CMAKE_CXX_STANDARD 20)
 
 include_directories(.)
+include_directories(Elevator)
+include_directories(Logger)
+include_directories(Printer)
 
 add_executable(Elevator
         main.cpp
@@ -22,6 +25,7 @@ set_target_properties(Elevator PROPERTIES
 )
 
 configure_file(Printer/About.txt ${CMAKE_BINARY_DIR}/bin/About.txt COPYONLY)
+configure_file(Printer/OpenDoor.txt ${CMAKE_BINARY_DIR}/bin/OpenDoor.txt COPYONLY)
 configure_file(Printer/CloseDoor.txt ${CMAKE_BINARY_DIR}/bin/CloseDoor.txt COPYONLY)
 
 add_executable(test test.cpp)

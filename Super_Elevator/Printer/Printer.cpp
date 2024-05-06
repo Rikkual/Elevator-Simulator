@@ -5,8 +5,20 @@
 #include "Printer.h"
 #include "TerminalControl.h"
 
+#ifdef DEBUG_ABOUT_JUMP
+void Printer::printOpenDoor() {
+    ifstream file("OpenDoor.txt");
+    int x = 1, y = 1;
+    string str;
+    while(getline(file, str)) {
+        gotoxy(x, y++);
+        cout << str;
+    }
+    file.close();
+}
+#endif
 
-void Printer::printDoor() {
+void Printer::printCloseDoor() {
     ifstream file("CloseDoor.txt");
     int x = 1, y = 1;
     string str;
@@ -54,12 +66,16 @@ void Printer::printAbout() {
     file.close();
 }
 
-void Printer::clearLine(int x, int y) {
+void Printer::clearLine(int x, int y, int len, bool animation) {
     gotoxy(x, y);
-    for(int i = 1; i <= DELETE_LINE_LENGTH; i++) {
+    for(int i = 1; i <= len; i++) {
         cout << " ";
     }
-    if(COUT_ANIMATION) mySleep(ANIMATION_SPEED);
+    if(animation && COUT_ANIMATION) mySleep(ANIMATION_SPEED);
+}
+
+void Printer::clearLine(int x, int y, bool animation) {
+    clearLine(x, y, DELETE_LINE_LENGTH, animation);
 }
 
 void Printer::clearAbout(int y) {
@@ -132,4 +148,11 @@ void Printer::printOptions(int x, int y, const std::vector<string>& options) {
     Printer::printDevisionLine(x, y);
     gotoxy(x, y++);
     cout << "请输入选项：";
+}
+
+void Printer::print(const string &message) {
+    int x = INTERACT_X, y = INTERACT_Y;
+    clearLine(x, y, false);
+    gotoxy(x, y);
+    cout << message;
 }

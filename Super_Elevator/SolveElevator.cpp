@@ -3,20 +3,20 @@
 //
 
 #include <bits/stdc++.h>
-#include "Elevator/Elevator.h"
-#include "Logger/Logger.h"
-#include "Printer/Printer.h"
+#include "Elevator.h"
+#include "Logger.h"
+#include "Printer.h"
 #include "TerminalControl.h"
 
 #include "config.h"
 
-NAMESPACE_SOLVE_ELEVAOTR
+NAMESPACE_SOLVE_ELEVATOR
 
 std::vector<string> options = {
         "电梯上行",
         "电梯下行",
         "打开日志",
-        "退出程序"
+        "退出程序",
 };
 
 bool executeOption(Elevator &elevator, Logger &logger, Printer &printer, int choice);
@@ -92,11 +92,10 @@ void elevatorUpDown(Elevator &elevator, Logger &logger, Printer &printer, bool u
     }
 
     int x = INTERACT_X, y = INTERACT_Y;
-    gotoxy(x, y);
     Printer::printDevisionLine(x, y);
 
     gotoxy(x, y++);
-    cout << "          " << (up ? "电梯上行" : "电梯下行");
+    cout << "           " << (up ? "电梯上行" : "电梯下行");
     if(COUT_ANIMATION) mySleep(ANIMATION_SPEED);
 
     Printer::printDevisionLine(x, y);

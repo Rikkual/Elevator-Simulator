@@ -5,9 +5,13 @@
 #ifndef CONFIG_FILE
 #define CONFIG_FILE
 
-#define VERSION "1.0.1"                // 版本号
+#define VERSION "1.0.2"                 // 版本号
 
-#define DEBUG_MODE 1                   // 调试模式开关，0为关闭，1为开启
+// 调试开关
+#define DEBUG_MODE
+// #define DEBUG_ABOUT_JUMP
+// #define DEBUG_ELEVATOR
+// #define DEBUG_ADVELEVATOR
 
 #include <bits/stdc++.h>
 
@@ -41,8 +45,8 @@ extern const int DOOR_SPEED;            // 电梯门的速度，单位为毫秒/
 extern const bool CLEAR_LOG_FILE;       // 是否在启动前清空log文件
 extern const bool LOG_TIME;             // 是否在log文件中记录时间
 
-#define NAMESPACE_SOLVE_ELEVAOTR namespace SolveElevator {
-#define NAMESPACE_SOLVE_ADVELEVAOTR namespace SolveAdvElevator {
+#define NAMESPACE_SOLVE_ELEVATOR namespace SolveElevator {
+#define NAMESPACE_SOLVE_ADVELEVATOR namespace SolveAdvElevator {
 #define NAMESPACE_END }
 
 #endif // CONFIG_FILE

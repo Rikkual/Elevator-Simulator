@@ -14,9 +14,13 @@ class Printer {
 private:
     string message = {};
 public:
-    static void printDoor();
+#ifdef DEBUG_ABOUT_JUMP
+    static void printOpenDoor();
+#endif
+    static void printCloseDoor();
     static void printAbout();
-    static void clearLine(int x, int y);
+    static void clearLine(int x, int y, int len = DELETE_LINE_LENGTH, bool animation = true);
+    static void clearLine(int x, int y, bool animation);
     static void clearAbout(int y = 18);
     static void closeDoor();
     static void openDoor();
@@ -25,6 +29,7 @@ public:
     void setMessage(const string& _message);
     [[nodiscard]] string Message() const;
     void printOptions(int x, int y, const std::vector<string>& options);
+    void print(const string &message);
 };
 
 
