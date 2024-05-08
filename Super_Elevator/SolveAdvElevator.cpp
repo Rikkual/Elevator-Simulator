@@ -177,5 +177,4 @@ bool checkFloor(AdvElevator &elevator, Logger &logger, Printer &printer, int tar
     }
     return true;
 }
-
 NAMESPACE_END
