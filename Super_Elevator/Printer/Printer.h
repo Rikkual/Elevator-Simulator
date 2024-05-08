@@ -29,7 +29,7 @@ public:
     void setMessage(const string& _message);
     [[nodiscard]] string Message() const;
     void printOptions(int x, int y, const std::vector<string>& options);
-    void print(const string &message);
+    static void print(const string &message, int cnty = 1);
 };
 
 

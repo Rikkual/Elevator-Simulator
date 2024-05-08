@@ -32,7 +32,14 @@ void solve(AdvElevator &elevator, Logger &logger, Printer &printer) {
         int x = stx, y = sty;
         printer.printOptions(x, y, options);
         showCursor(); enableEcho();
-        int choice; cin >> choice;
+        int choice;
+        // 防止有坏蛋故意输入非数字，引起程序死循环(ﾟ∀ﾟ)
+        if(!(cin >> choice)) {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            logger.error("有坏蛋，有坏蛋输入非法字符desu~。(╯▔皿▔)╯");
+            printer.setMessage("请不要输入非法字符desu~");
+        }
         hideCursor(); disableEcho();
 
         getCursorPos(x, y);
@@ -69,13 +76,36 @@ bool executeOption(AdvElevator &elevator, Logger &logger, Printer &printer, int 
     return true;
 }
 
+void elevatorUp(AdvElevator &elevator, Logger &logger, Printer &printer) {
+    elevatorUpDown(elevator, logger, printer, true);
+}
+
+void elevatorDown(AdvElevator &elevator, Logger &logger, Printer &printer) {
+    elevatorUpDown(elevator, logger, printer, false);
+}
+
+void elevatorUpDown(AdvElevator &elevator, Logger &logger, Printer &printer, bool up) {
+    bool down = !up;
+    if(up && elevator.getCurrentFloor() == FLOOR) {
+        logger.error("用户在顶层尝试上行！");
+        printer.setMessage("上面的区域以后再来探索吧！");
+        return;
+    }
+    if(down && elevator.getCurrentFloor() == 1) {
+        logger.error("用户在底层尝试下行！");
+        printer.setMessage("暂时没有建设地下城的打算呢！");
+        return;
+    }
+    getPersonInfo(elevator, logger, printer, up);
+    up ? elevator.setUpButton() : elevator.setDownButton();
+}
+
 bool checkFloor(AdvElevator &elevator, Logger &logger, Printer &printer, int targetFloor, bool up);
 
 void getPersonInfo(AdvElevator &elevator, Logger &logger, Printer &printer, bool up) {
     // bool down = !up;
     int x = INTERACT_X, y = INTERACT_Y;
     Printer::printDevisionLine(x, y);
-    printer.setMessage("电梯限载10人");
     gotoxy(x, y++);
     cout << (up ? "电梯上行" : "电梯下行") << " 限载10人";
     Printer::printDevisionLine(x, y);
@@ -92,7 +122,12 @@ void getPersonInfo(AdvElevator &elevator, Logger &logger, Printer &printer, bool
         cout << std::format("当前选择的乘客({}/{})", i, num);
         gotoxy(x + 30, y);
         showCursor(); enableEcho();
-        int floor; cin >> floor;
+        int floor; // cin >> floor;
+        if(!(cin >> floor)) {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            floor = -114514; // 非法输入
+        }
         hideCursor(); disableEcho();
         Printer::clearLine(x + 30, y, 5, false);
         Printer::clearLine(x, y + 1);
@@ -104,11 +139,17 @@ void getPersonInfo(AdvElevator &elevator, Logger &logger, Printer &printer, bool
         }
         elevator.addPerson(i, floor);
     }
-
+    Printer::clearAbout(y);
 }
 
 bool checkFloor(AdvElevator &elevator, Logger &logger, Printer &printer, int targetFloor, bool up) {
     bool down = !up;
+    if(targetFloor == -114514) {
+        logger.error("有坏蛋，有坏蛋输入非法字符desu~。(╯▔皿▔)╯");
+        cout << "请不要输入非法字符desu~";
+        return false;
+
+    }
     if(targetFloor < 1) {
         logger.error(std::format("用户{}输入的目标楼层超出最小范围", elevator.getPersonNum() + 1));
         cout << "暂时没有建设地下城的打算呢！";
@@ -135,31 +176,6 @@ bool checkFloor(AdvElevator &elevator, Logger &logger, Printer &printer, int tar
         return false;
     }
     return true;
-}
-
-void elevatorUp(AdvElevator &elevator, Logger &logger, Printer &printer) {
-    elevatorUpDown(elevator, logger, printer, true);
-}
-
-void elevatorDown(AdvElevator &elevator, Logger &logger, Printer &printer) {
-    elevatorUpDown(elevator, logger, printer, false);
-}
-
-void elevatorUpDown(AdvElevator &elevator, Logger &logger, Printer &printer, bool up) {
-    bool down = !up;
-    if(up && elevator.getCurrentFloor() == FLOOR) {
-        logger.error("用户在顶层尝试上行！");
-        printer.setMessage("上面的区域以后再来探索吧！");
-        return;
-    }
-    if(down && elevator.getCurrentFloor() == 1) {
-        logger.error("用户在底层尝试下行！");
-        printer.setMessage("暂时没有建设地下城的打算呢！");
-        return;
-    }
-
-    getPersonInfo(elevator, logger, printer, true);
-    up ? elevator.setUpButton() : elevator.setDownButton();
 }
 
 NAMESPACE_END

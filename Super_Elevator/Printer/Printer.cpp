@@ -150,8 +150,8 @@ void Printer::printOptions(int x, int y, const std::vector<string>& options) {
     cout << "请输入选项：";
 }
 
-void Printer::print(const string &message) {
-    int x = INTERACT_X, y = INTERACT_Y;
+void Printer::print(const string &message, int cnty) {
+    int x = INTERACT_X, y = INTERACT_Y + cnty - 1;
     clearLine(x, y, false);
     gotoxy(x, y);
     cout << message;

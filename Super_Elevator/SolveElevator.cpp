@@ -28,16 +28,18 @@ void solve(Elevator &elevator, Logger &logger, Printer &printer) {
     int stx = INTERACT_X, sty = INTERACT_Y;
     printer.setMessage(std::format("Ciallo, 本电梯最高服务至{}层。", FLOOR));
     while(true) {
-        std::cin.clear();
-        // 忽略之前的输入缓冲区中的字符
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-
         int x = stx, y = sty;
         printer.printOptions(x, y, options);
         showCursor(); enableEcho();
         getCursorPos(x, y);
-
-        int choice; cin >> choice;
+        int choice;
+        // 防止有坏蛋故意输入非数字，引起程序死循环(ﾟ∀ﾟ)
+        if(!(cin >> choice)) {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            logger.error("有坏蛋，有坏蛋。(╯▔皿▔)╯");
+            printer.setMessage("请不要输入非法字符desu~");
+        }
         hideCursor(); disableEcho();
         Printer::clearAbout();
 
@@ -110,10 +112,23 @@ void elevatorUpDown(Elevator &elevator, Logger &logger, Printer &printer, bool u
         showCursor(); enableEcho();
         int cursorX, cursorY;
         getCursorPos(cursorX, cursorY);
-        int targetFloor; cin >> targetFloor;
+        int targetFloor; // cin >> targetFloor;
+        if(!(cin >> targetFloor)) {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            targetFloor = -114514; // 非法输入
+        }
+
         Printer::clearLine(cursorX, cursorY);
         hideCursor(); disableEcho();
 
+        if(targetFloor == -114514) {
+            Printer::clearLine(x, y + 1);
+            gotoxy(x, y + 1);
+            logger.error("有坏蛋，有坏蛋输入非法字符desu~。(╯▔皿▔)╯");
+            cout << "请不要输入非法字符desu~";
+            continue;
+        }
         if(targetFloor < 1) {
             Printer::clearLine(x, y + 1);
             gotoxy(x, y + 1);

@@ -17,7 +17,6 @@ const int ABOUT_Y = 3;                      // 关于菜单的Y坐标
 const int INTERACT_X = 45;                  // 交互菜单的X坐标
 const int INTERACT_Y = 2;                   // 交互菜单的Y坐标
 
-
 const int FLOOR_DISPLAY_X = 32;             // 电梯楼层显示的X坐标
 const int FLOOR_DISPLAY_Y = 10;             // 电梯楼层显示的Y坐标
 const int ELEVATOR_SPEED = 800;             // 电梯运行的速度，单位为毫秒/层的单位时间
