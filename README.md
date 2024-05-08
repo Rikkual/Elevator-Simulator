@@ -5,7 +5,7 @@
 
 ```
             Elevator Simulator
-                    by Rikkual / WangMing
+                    	by Rikkual 
 
 Ciallo～(∠・ω< )⌒★ The project is a course experiment
 that simulates the operation of elevator systems.
