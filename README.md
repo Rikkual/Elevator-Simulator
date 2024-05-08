@@ -13,6 +13,8 @@ The project referenced SmallC's
 elevator animation design and re implemented it.
 Created by Rikkual on 2024/4/2. Version [version].
 Github : https://github.com/Rikkual/Elevator-Simulator
+
+From About.txt
 ```
 
 ## 版本更新
