@@ -3,6 +3,8 @@
 
 本项目是Rikkual在zstu C++课程的课程实验，供学习参考使用。
 
+项目语言环境为C++20，gcc version 13.1.0 (GCC)。
+
 ```
             Elevator Simulator
                     	by Rikkual 
