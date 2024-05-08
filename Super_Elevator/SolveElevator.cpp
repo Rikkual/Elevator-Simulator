@@ -28,6 +28,10 @@ void solve(Elevator &elevator, Logger &logger, Printer &printer) {
     int stx = INTERACT_X, sty = INTERACT_Y;
     printer.setMessage(std::format("Ciallo, 本电梯最高服务至{}层。", FLOOR));
     while(true) {
+        std::cin.clear();
+        // 忽略之前的输入缓冲区中的字符
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
         int x = stx, y = sty;
         printer.printOptions(x, y, options);
         showCursor(); enableEcho();
