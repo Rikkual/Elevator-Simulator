@@ -3,6 +3,18 @@
 
 本项目是Rikkual在zstu C++课程的课程实验，供学习参考使用。
 
+```
+            Elevator Simulator
+                    by Rikkual / WangMing
+
+Ciallo～(∠・ω< )⌒★ The project is a course experiment
+that simulates the operation of elevator systems.
+The project referenced SmallC's
+elevator animation design and re implemented it.
+Created by Rikkual on 2024/4/2. Version [version].
+Github : https://github.com/Rikkual/Elevator-Simulator
+```
+
 ## 版本更新
 
 ### v1.0.0
