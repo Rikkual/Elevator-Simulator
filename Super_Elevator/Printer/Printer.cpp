@@ -18,6 +18,18 @@ void Printer::printOpenDoor() {
 }
 #endif
 
+void Printer::setxy(int x, int y) {
+    curX = x; curY = y;
+}
+
+int Printer::getX() const {
+    return curX;
+}
+
+int Printer::getY() const {
+    return curY;
+}
+
 void Printer::printCloseDoor() {
     ifstream file("CloseDoor.txt");
     int x = 1, y = 1;
@@ -150,9 +162,12 @@ void Printer::printOptions(int x, int y, const std::vector<string>& options) {
     cout << "请输入选项：";
 }
 
-void Printer::print(const string &message, int cnty) {
-    int x = INTERACT_X, y = INTERACT_Y + cnty - 1;
-    clearLine(x, y, false);
+void Printer::print(const string &message, int x, int y) {
     gotoxy(x, y);
     cout << message;
+    curY++;
+}
+
+void Printer::print(const string &message) {
+    print(message, curX, curY);
 }

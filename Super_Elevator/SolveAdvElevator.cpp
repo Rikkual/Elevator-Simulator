@@ -137,7 +137,7 @@ void getPersonInfo(AdvElevator &elevator, Logger &logger, Printer &printer, bool
             Printer::clearLine(x, y + 1);
             continue;
         }
-        elevator.addPerson(i, floor);
+        elevator.addPerson(i, elevator.getCurrentFloor(), floor);
     }
     Printer::clearAbout(y);
 }

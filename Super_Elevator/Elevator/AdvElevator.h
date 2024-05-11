@@ -16,7 +16,7 @@ protected:
 public:
     explicit AdvElevator(int _floor);
     void addPerson(Person p);
-    void addPerson(int id, int target);
+    void addPerson(int id, int start, int target);
     int getPersonNum();
     void setUpButton();
     void setDownButton();

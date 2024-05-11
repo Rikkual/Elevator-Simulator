@@ -63,7 +63,12 @@ void choseMode(Logger &logger, Printer &printer) {
         int x = stx, y = sty;
         printer.printOptions(x, y, options);
         showCursor(); enableEcho();
-        int mode; cin >> mode;
+        int mode;
+        if(!cin >> mode) {
+            cin.clear();
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            mode = -114514;
+        }
         hideCursor(); disableEcho();
 
         getCursorPos(x, y);

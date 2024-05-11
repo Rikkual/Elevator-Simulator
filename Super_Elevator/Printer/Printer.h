@@ -12,11 +12,15 @@
 
 class Printer {
 private:
+    int curX, curY;
     string message = {};
 public:
 #ifdef DEBUG_ABOUT_JUMP
     static void printOpenDoor();
 #endif
+    void setxy(int x, int y);
+    [[nodiscard]] int getX() const;
+    [[nodiscard]] int getY() const;
     static void printCloseDoor();
     static void printAbout();
     static void clearLine(int x, int y, int len = DELETE_LINE_LENGTH, bool animation = true);
@@ -29,7 +33,8 @@ public:
     void setMessage(const string& _message);
     [[nodiscard]] string Message() const;
     void printOptions(int x, int y, const std::vector<string>& options);
-    static void print(const string &message, int cnty = 1);
+    void print(const string &message, int x, int y);
+    void print(const string &message);
 };
 
 
