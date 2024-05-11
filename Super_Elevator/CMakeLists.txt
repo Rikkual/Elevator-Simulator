@@ -24,8 +24,8 @@ set_target_properties(Elevator PROPERTIES
         RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
 )
 
-configure_file(Printer/About.txt     ${CMAKE_BINARY_DIR}/bin/About.txt     COPYONLY)
-configure_file(Printer/OpenDoor.txt  ${CMAKE_BINARY_DIR}/bin/OpenDoor.txt  COPYONLY)
+configure_file(Printer/About.txt ${CMAKE_BINARY_DIR}/bin/About.txt COPYONLY)
+configure_file(Printer/OpenDoor.txt ${CMAKE_BINARY_DIR}/bin/OpenDoor.txt COPYONLY)
 configure_file(Printer/CloseDoor.txt ${CMAKE_BINARY_DIR}/bin/CloseDoor.txt COPYONLY)
 
 add_executable(test test.cpp)

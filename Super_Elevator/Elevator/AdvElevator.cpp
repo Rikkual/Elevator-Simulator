@@ -35,6 +35,7 @@ void AdvElevator::setUpButton() {
         printer->print(std::format("乘客{}已抵达{}楼", p.getId(), p.getTargetFloor()));
         mySleep(500);
     }
+    people.clear();
     mySleep(1000);
     Printer::clearAbout(printer->getY());
 }
@@ -54,6 +55,7 @@ void AdvElevator::setDownButton() {
         printer->print(std::format("乘客{}已抵达{}楼", p.getId(), p.getTargetFloor()));
         mySleep(500);
     }
+    people.clear();
     mySleep(1000);
     Printer::clearAbout(printer->getY());
 }
