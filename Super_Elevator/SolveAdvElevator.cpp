@@ -98,6 +98,7 @@ void elevatorUpDown(AdvElevator &elevator, Logger &logger, Printer &printer, boo
     }
     getPersonInfo(elevator, logger, printer, up);
     up ? elevator.setUpButton() : elevator.setDownButton();
+    printer.setMessage(std::format("Ciallo, 本电梯最高服务至{}层。", FLOOR));
 }
 
 bool checkFloor(AdvElevator &elevator, Logger &logger, Printer &printer, int targetFloor, bool up);

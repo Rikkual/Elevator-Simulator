@@ -115,7 +115,7 @@ void gotoxy(int x, int y) {
     cout << "\033[" << y << ";" << x << "H";
 }
 
-void clearScreen() {
+[[maybe_unused]] void clearScreen() {
 #ifdef _WIN32
     system("cls");
 #else
